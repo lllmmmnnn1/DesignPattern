@@ -9,7 +9,13 @@ public class Main {
         /*Plane p =new Plane();
         p.go();*/
 
-        Moveable m =new Car();
+        /*Moveable m =new Car();
+        m.go();*/
+
+        Moveable m=new SimpleVehicleFactory().createCar();
         m.go();
+
+        /*Moveable m= new CarFactory().createCar();
+        m.go();*/
     }
 }
